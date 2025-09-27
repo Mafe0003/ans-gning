@@ -40,7 +40,7 @@
     x-on:click.outside="showmenu = false"
     role="dialog"
     aria-modal="true"
-    class="fixed top-0 right-0 h-full bg-[var(--color-blue)] text-[#E7E7E7] z-50
+    class="fixed top-0 right-0 h-full bg-[var(--accent-color)] text-[#E7E7E7] z-50
            w-full sm:w-80 md:w-96 shadow-lg overflow-auto">
 
     <!-- Luk-knap -->
@@ -48,16 +48,65 @@
       <button x-on:click="showmenu = false" class="text-3xl leading-none" aria-label="Close menu">&times;</button>
     </div>
 
-    <!-- Menu-indhold -->
-    <ul class="flex flex-col items-center gap-10 lg:gap-20 lg:py-6 text-lg lg:text-2xl uppercase tracking-wide font-buttons">
-  <li><a href="#" target="_blank">LinkedIn</a>
-</li>
+    <ul class="flex flex-col items-end mr-10 gap-5 lg:gap-10 lg:py-6 text-xl lg:text-2xl uppercase tracking-wide font-buttons">
+  
+  <li class="relative group">
+    <a href="#" target="_blank" class="hover:no-underline">LinkedIn</a>
+    <img 
+      src="/images/underline_light.svg" 
+      alt="underline" 
+      class="absolute right-0 w-full 
+             opacity-0 md:group-hover:opacity-100 md:active:opacity-100
+             transition-opacity duration-300 translate-y-1"
+    />
+  </li>
 
+  <li class="relative group">
+    <a href="https://www.facebook.com/margherita.feltrin.92" target="_blank" class="hover:no-underline">Facebook</a>
+    <img 
+      src="/images/underline_light.svg" 
+      alt="underline" 
+      class="absolute right-0 w-full 
+             opacity-0 md:group-hover:opacity-100 md:active:opacity-100
+             transition-opacity duration-300 translate-y-1"
+    />
+  </li>
 
-  <li><a href="https://www.facebook.com/margherita.feltrin.92" target="_blank" class="hover:underline">Facebook</a></li>
-  <li><a href="https://www.instagram.com/margy.feltry/" target="_blank" class="hover:underline">Instagram</a></li>
-  <li><a href="https://dk.pinterest.com" target="_blank" class="hover:underline">Pinterest</a></li>
-  <li><a href="mailto:margi.feltrin@gmail.com" target="_blank" class="hover:underline">Email me</a></li>
+  <li class="relative group">
+    <a href="https://www.instagram.com/margy.feltry/" target="_blank" class="hover:no-underline">Instagram</a>
+    <img 
+      src="/images/underline_light.svg" 
+      alt="underline" 
+      class="absolute right-0 w-full 
+             opacity-0 md:group-hover:opacity-100 md:active:opacity-100
+             transition-opacity duration-300 translate-y-1"
+    />
+  </li>
+
+  <li class="relative group">
+    <a href="https://dk.pinterest.com" target="_blank" class="hover:no-underline">Pinterest</a>
+    <img 
+      src="/images/underline_light.svg" 
+      alt="underline" 
+      class="absolute right-0 w-full 
+             opacity-0 md:group-hover:opacity-100 md:active:opacity-100
+             transition-opacity duration-300 translate-y-1"
+    />
+  </li>
+
+  <li class="relative group">
+    <a href="mailto:margi.feltrin@gmail.com" target="_blank" class="hover:no-underline">Email me</a>
+    <img 
+      src="/images/underline_light.svg" 
+      alt="underline" 
+      class="absolute right-0 w-full 
+             opacity-0 md:group-hover:opacity-100 md:active:opacity-100
+             transition-opacity duration-300 translate-y-1"
+    />
+  </li>
+  
 </ul>
+
+
   </aside>
 </header>

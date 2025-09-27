@@ -9,10 +9,11 @@
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --bg-color: #e7e7e7;
-  --color-text: #3d3d3d;
-  --color-textlight: #e7e7e7;
-  --color-blue: #1801c5;
+  --color-primary: #e7e7e7;
+  --color-secondary: #3d3d3d;
+  --color-seclight: #e7e7e7;
+  --accent-color: #100088;
+  --accent-color2: #1801c5;
 
   /*Typografi */
   --font-display: "Caveat", cursive;
