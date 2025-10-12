@@ -54,11 +54,420 @@ import Button from "../components/Button.astro";
       <p>I love the sea, and hope to get a chance to swim in as many different places in the world as possible</p>
     </div>
   </div>
+ </div>
+</section> 	
 
+<!-- WEBSITE PROJEKT SEKTION -->
+<section class="relative py-10 px-6 lg:px-20">
+  <!-- Overskrift -->
+  <div class="flex justify-end items-center">
+  <Heading htmlheading="h2" size="medium" font="h2" stylingclasses="text-[var(--accent-color)]">
+          websites projects
+        </Heading>
+  </div>
+
+  <!-- SVG streg -->
+  <div class="mb-10">
+  <img
+    src="/images/dekorativ_linje.svg"
+    alt="Dekorativ linje"
+    class="w-full h-auto"
+  />
+</div>
+
+  <!-- Tekst + pil -->
+  <div
+    class="flex justify-left items-center gap-5 cursor-pointer select-none"
+    id="dropdown-toggle"
+  >
+    <p class="font-paragraph text-3xl lg:text-6xl">/1257 degrees</p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="var(--accent-color2)"
+      id="dropdown-arrow"
+      class="lg:w-12 lg:h-12 transition-transform duration-300"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </div>
+
+  <!-- Dropdown panel -->
+  <div
+    id="dropdown-panel"
+    class="hidden mt-6 relative"
+  >
+    <!-- Indhold i dropdownen -->
+ 
+    <!-- første kolonne -->
+     <div> 
+    <p class="font-paragraph text-black mb-6 lg:text-xl">
+      1257 degrees is a ceramic studio that I've worked with for my 2nd semesters final exam. They needed to create their visual identity and develop a website.
+    </p>
+    </div>
+
+      <!-- anden kolonne -->
+      <div class="lg:grid grid-cols-2 gap-6 mt-6"> 
+      <img src="/images/image1.webp" alt="førstebillede" class="mb-6">
+      <img src="/images/image2.webp" alt="andetbillede">
+      </div>
+
+<!-- to knapper -->
+     <div class="flex flex-row justify-center gap-6">
+      <Button href="https://1257degrees.netlify.app/" target="_blank" rel="noopener noreferrer">
+  VISIT THE WEBSITE
+</Button>
+
+      <Button href="https://www.figma.com/design/S0WLnAufUGnC9NZYjZjoFy/1257%C2%B0?node-id=19-2&t=csZuuWtYyBqvcmvp-1" target="_blank" rel="noopener noreferrer">SEE THE PROCESS</Button>
+     </div>
+  </div>
+</section>
+
+<!-- javascript delen -->
+<script>
+  const toggle = document.getElementById("dropdown-toggle");
+  const panel = document.getElementById("dropdown-panel");
+  const close = document.getElementById("dropdown-close");
+  const arrow = document.getElementById("dropdown-arrow");
+
+  toggle.addEventListener("click", () => {
+    panel.classList.toggle("hidden");
+    arrow.classList.toggle("rotate-180");
+  });
+
+  close.addEventListener("click", () => {
+    panel.classList.add("hidden");
+    arrow.classList.remove("rotate-180");
+  });
+</script>
+
+<!-- SKILLS SEKTION -->
+<section class="relative py-10 px-6 lg:px-20">
+  <!-- Overskrift -->
+  <div class="flex justify-end items-center">
+  <Heading htmlheading="h2" size="medium" font="h2" stylingclasses="text-[var(--accent-color)]">
+          skills
+        </Heading>
+  </div>
+
+  <!-- SVG streg -->
+  <div class="mb-10">
+  <img
+    src="/images/dekorativ_linje.svg"
+    alt="Dekorativ linje"
+    class="w-full h-auto"
+  />
+</div>
+
+  <!-- Skills grid -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 font-paragraph">
+    
+    <!-- Coding -->
+    <div class="text-center lg:text-left">
+      <Heading htmlheading="h3" size="small" font="h3" stylingclasses="text-black underline decoration-[var(--accent-color)] underline-offset-4 mb-4">coding</Heading>
+
+      <div class="space-y-3">
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>HTML</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>CSS</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>JavaScript</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>Tailwind</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools/Others -->
+    <div class="text-center lg:text-left">
+      <Heading htmlheading="h3" size="small" font="h3" stylingclasses="text-black underline decoration-[var(--accent-color)] underline-offset-4 mb-4">tools/others</Heading>
+
+      <div class="space-y-3">
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>MacOS</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>Netlify</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>GitHub</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>Figma</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>Adobe</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="text-center lg:text-left">
+      <Heading htmlheading="h3" size="small" font="h3" stylingclasses="text-black underline decoration-[var(--accent-color)] underline-offset-4 mb-4">languages</Heading>
+
+      <div class="space-y-3">
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>Italian</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>English</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>Danish</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>Spanish</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center lg:justify-start gap-10 text-[16px] lg:text-[32px]">
+          <span>German</span>
+          <div class="flex space-x-1 lg:space-x-2">
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[var(--accent-color2)] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+            <span class="w-3 h-3 lg:w-5 lg:h-5 bg-[#D9D9D9] rounded-full"></span>
+          </div>
+        </div>
+ <Button href="/images/cv.pdf" target="_blank" rel="noopener noreferrer">
+  HAVE A LOOK AT MY CV
+</Button>
+      </div>
+      
+    </div>
+</div>
+
+<!-- MY FOCUS SEKTION -->
+<section class="relative py-10 px-6 lg:px-20">
+  <!-- Overskrift -->
+  <div class="flex justify-end items-center">
+  <Heading htmlheading="h2" size="medium" font="h2" stylingclasses="text-[var(--accent-color)]">
+          my focus
+        </Heading>
+  </div>
+
+  <!-- SVG streg -->
+  <div class="mb-10">
+  <img
+    src="/images/dekorativ_linje.svg"
+    alt="Dekorativ linje"
+    class="w-full h-auto"
+  />
+</div>
+
+<!-- en kolonne grid i mobil / 2 kolonner grid i desktop -->
+ <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
+
+  <!-- første kolonne -->
+  <div> 
+  <!-- brand identity -->
+   <div> 
+  <div class="flex justify-start items-center">
+  <Heading htmlheading="h3" size="small" font="h3" stylingclasses="text-black">
+          brand identity
+        </Heading>
+  </div>
+
+  <!-- SVG streg -->
+  <div class="mb-10">
+  <img
+    src="/images/dekorativ_linje.svg"
+    alt="Dekorativ linje"
+    class="w-full h-auto"
+  />
+</div>
+<p class="font-paragraph lg:text-xl mb-10 p-2"> 
+  to learn more about the process of developing a strong brand identity, from initial research and concept development to visual execution.
+</p>
+</div>
+
+<!-- website developing -->
+<div> 
+  <div class="flex justify-start items-center">
+  <Heading htmlheading="h3" size="small" font="h3" stylingclasses="text-black">
+          website developing
+        </Heading>
+  </div>
+
+  <!-- SVG streg -->
+  <div class="mb-10">
+  <img
+    src="/images/dekorativ_linje.svg"
+    alt="Dekorativ linje"
+    class="w-full h-auto"
+  />
+  </div>
+  <p class="font-paragraph lg:text-xl mb-10 p-2"> 
+  to learn more about web development, including both design and coding, to create functional and user-friendly websites.
+</p>
+  </div>
+  </div>
+
+  <!-- anden kolonne -->
+     <div> 
+  <!-- adobe apps-->
+   <div> 
+  <div class="flex justify-start items-center">
+  <Heading htmlheading="h3" size="small" font="h3" stylingclasses="text-black">
+          adobe apps
+        </Heading>
+  </div>
+
+  <!-- SVG streg -->
+  <div class="mb-10">
+  <img
+    src="/images/dekorativ_linje.svg"
+    alt="Dekorativ linje"
+    class="w-full h-auto"
+  />
+</div>
+<p class="font-paragraph lg:text-xl mb-10 p-2"> 
+to deepen my skills in Adobe Creative Cloud, especially Photoshop, Illustrator, and InDesign, to create professional visual content.
+</p>
+</div>
+
+<!-- content creation -->
+<div> 
+  <div class="flex justify-start items-center">
+  <Heading htmlheading="h3" size="small" font="h3" stylingclasses="text-black">
+          content creation
+        </Heading>
+  </div>
+
+  <!-- SVG streg -->
+  <div class="mb-10">
+  <img
+    src="/images/dekorativ_linje.svg"
+    alt="Dekorativ linje"
+    class="w-full h-auto"
+  />
+  </div>
+<p class="font-paragraph lg:text-xl mb-10 p-2"> 
+to improve my ability to plan and produce engaging digital content tailored to different audiences and platforms.
+</p>
 
   </div>
-</section> 	
+  </div>
+
+</div>
+
+<!-- adobe apps & content creation -->
+
+
+ 
+
+</div>
+</section>
 </main>
 
-  <Button>HAVE A LOOK AT MY CV</Button>
+  
 </MainLayout>
