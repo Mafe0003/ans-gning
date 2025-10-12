@@ -6,10 +6,59 @@ import Text from "../components/Text.astro";
 import Button from "../components/Button.astro";
 ---
 <MainLayout title="Application">
-	<main class="container mx-auto">
-		<Heading htmlheading="h1" size="xlarge" font="h1" stylingclasses="grid text-center">Margherita</Heading>
-		<Heading htmlheading="h1">Lav noget flot!</Heading>
-        <Text teksttype="brødtekst">Så bliver Anders glad:-)</Text>
-		<Button>HAVE A LOOK AT MY CV</Button>
-	</main>
+  <main class="container mx-auto">
+    <section class="relative"> 
+      
+      <!-- Overskrifter -->
+      <div class="absolute top-5 left-1/2 transform -translate-x-1/2 lg:top-0 lg:left-20 lg:translate-x-0 z-20">
+        <Heading htmlheading="h1" size="large" font="h1" stylingclasses="leading-none m-0 text-[var(--accent-color)]">
+          Margherita
+        </Heading>
+        <Heading htmlheading="h3" size="small" font="h3" stylingclasses="-mt-2 text-right ml-35 w-max text-black lg:ml-90">
+          multimediedesigner
+        </Heading>
+      </div>
+
+      <!-- Container til billede og liste -->
+      <div class="relative flex flex-col items-center justify-start px-6 pt-32 lg:flex-row lg:justify-between lg:items-start lg:px-20 lg:pt-48">
+        
+        <!-- Ord + Billede -->
+        <div class="flex flex-row items-end text-left lg:items-center lg:w-1/2 z-10">
+          
+          <!-- De blå ord -->
+          <ul class="text-[var(--accent-color)] font-paragraph text-sm relative z-20 mr-30 lg:text-xl lg:mt-30 lg:mr-25">
+            <li>creative</li>
+            <li>professional</li>
+            <li>modern</li>
+            <li>sentitive</li>
+            <li>emotional</li>
+            <li>thoughtful</li>
+            <li>reliable</li>
+          </ul>
+
+          <!-- Portræt -->
+          <img
+            src="/images/potrait.webp"
+            alt="Margherita portrait"
+            class="w-56 h-auto md:w-80 relative -mt-16 lg:-mt-28 -ml-40 opacity-85"
+          />
+        </div>
+
+  <!-- Tekstblok til højre (på mobil nedenunder) -->
+  <div class="mt-8 md:w-1/2 z-10">
+    <div class="space-y-2 lg:text-xl lg:-ml-20 leading-relaxed font-paragraph">
+      <p>24 year old, from Treviso, Italy</p>
+      <p>currently studying digital design at EK, Copenhagen</p>
+      <p>experience working on school projects as well as my own</p>
+      <p>I have a previous education as baker and pastry chef and that is still a big part of my life</p>
+      <p>I love the sea, and hope to get a chance to swim in as many different places in the world as possible</p>
+    </div>
+  </div>
+
+
+  </div>
+</section> 	
+</main>
+
+  <Button>HAVE A LOOK AT MY CV</Button>
 </MainLayout>
